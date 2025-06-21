@@ -5,9 +5,9 @@ import path from 'path'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'dist', // Vercel expects this by default
+    outDir: 'dist',
     rollupOptions: {
-      input: path.resolve(__dirname, 'index.html') // ✅ Correct location
+      input: path.resolve(__dirname, 'index.html')
     }
   }
-}))
+})
